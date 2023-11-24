@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const socket = io('http://localhost:3000');
+// const socket = io('http://localhost:3000');
+const socket = io('https://payment-tg-bot.onrender.com');
 
 socket.on('new_message_server', (data) => {
   console.log(data);
