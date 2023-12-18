@@ -58,7 +58,7 @@ export const HomePage = () => {
     moneyInDeel: number;
     profit: number;
     salesCount: number;
-    dimaProfit: number;
+    userProfit: number;
     growPercent: number;
   }>();
 
@@ -291,7 +291,7 @@ export const HomePage = () => {
             <Statistic title="Общий +" valueStyle={{ color: '#3f8600' }} value={stats?.profit} />
           </Card>
           <Card css={{ height: '100px' }} bordered={false}>
-            <Statistic title="Мой +" valueStyle={{ color: '#3f8600' }} value={stats?.dimaProfit} />
+            <Statistic title="Мой +" valueStyle={{ color: '#3f8600' }} value={stats?.userProfit} />
           </Card>
         </div>
         <Card css={{ height: '100px' }} bordered={false}>

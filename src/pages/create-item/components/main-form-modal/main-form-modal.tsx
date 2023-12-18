@@ -139,7 +139,7 @@ export const MainFormModal = () => {
         .then(() => {
           toast.success('Покупка создана');
           setCreateItemStep(CreateItemSteps.CHOOSE_TYPE);
-          // setDefaultValues();
+          setPurchase(initialFormValues);
           navigate('/');
         });
     }
