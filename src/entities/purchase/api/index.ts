@@ -14,10 +14,6 @@ type Data = Record<
   | string[]
   | Record<string, string | number | boolean>[]
 >;
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const a: Data = {
-  extra: [{ name: 'd' }, { address: '123' }]
-};
 
 export const purchaseApi = {
   create: (purchase: PartialDeep<CarModel>) =>

@@ -1,16 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { useCallback, useEffect, useState } from 'react';
-import io from 'socket.io-client';
-import { useAuthStore } from '../../app/stores/auth-store';
+// import io from 'socket.io-client';
 import { styles } from './home-page.styles';
-import { Link, useNavigate } from 'react-router-dom';
-import { useCreateItemStore } from '../../app/stores/create-item-store';
+import { useNavigate } from 'react-router-dom';
+// import { useCreateItemStore } from '../../app/stores/create-item-store';
 import { purchaseApi } from '../../entities/purchase/api';
 import { CarModel, ExtraInfo } from '../../entities/purchase/model';
-import { Badge, Button, Card, Dropdown, MenuProps, Modal, Popover, Statistic, Table } from 'antd';
+import { Badge, Button, Card, Dropdown, Modal, Popover, Statistic, Table } from 'antd';
 import { ColumnsType } from 'antd/es/table';
-import { InfoBlock } from '../../features/info-block/info-block';
 import {
   DeleteOutlined,
   EditOutlined,
@@ -47,8 +45,8 @@ const renderStatus = (status: PurchaseStatuses) => {
 };
 
 export const HomePage = () => {
-  const [notifications, setNotifications] = useState<string[]>([]);
-  const { createItemStep } = useCreateItemStore((state) => state);
+  // const [notifications, setNotifications] = useState<string[]>([]);
+  // const { createItemStep } = useCreateItemStore((state) => state);
   const [currentExtraInfo, setCurrentExtraInfo] = useState<ExtraInfo[]>([]);
   const [itemList, setItemList] = useState<CarModel[]>([]);
   const [openSoldPriceModal, setOpenSoldPriceModal] = useState(false);

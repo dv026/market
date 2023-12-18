@@ -1,11 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { Divider, List, Modal, Select, Typography } from 'antd';
-import {
-  CreateItemSteps,
-  ItemTypeNames,
-  ItemTypes,
-  getItemTypeNameOptions
-} from '../../../../app/types';
+import { Divider, List, Modal, Typography } from 'antd';
+import { CreateItemSteps, ItemTypes, getItemTypeNameOptions } from '../../../../app/types';
 import { styles } from './choose-type-modal.styles';
 import { useCreateItemStore } from '../../../../app/stores/create-item-store';
 import { useCallback, useEffect, useRef } from 'react';
